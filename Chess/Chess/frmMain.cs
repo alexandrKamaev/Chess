@@ -37,7 +37,7 @@ namespace Chess
         private void button1_Click(object sender, EventArgs e)
         {
             ClearColor();
-            Chess chess = new Chess() { curPoint = new Point(3, 6) };
+            Chess chess = new Chess();
             chess.GetEightFigure(SetColorToDataGridView,Color.BlueViolet, new Point(dgvChess.CurrentCell.RowIndex+1, dgvChess.CurrentCell.ColumnIndex+1), 1);
         }
 
